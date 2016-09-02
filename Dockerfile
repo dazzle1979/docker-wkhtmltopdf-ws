@@ -1,14 +1,18 @@
 FROM openlabs/docker-wkhtmltopdf:latest
-MAINTAINER Sharoon Thomas <sharoon.thomas@openlabs.co.in>
+MAINTAINER Sergey Chuprunov
 
 # Install dependencies for running web service
-RUN apt-get install -y python-pip
-RUN pip install werkzeug executor gunicorn
+RUN apt-get update && apt-get install -y \
+    php5 \
+    curl \
+    nano
 
-ADD app.py /app.py
+#for nano working
+ENV TERM xterm
+
+ADD index.php /index.php
 EXPOSE 80
 
-ENTRYPOINT ["usr/local/bin/gunicorn"]
-
-# Show the extended help
-CMD ["-b", "0.0.0.0:80", "--log-file", "-", "app:application"]
+# to make php -S handle sigterm
+ENTRYPOINT ["php"]
+CMD ["-S", "0.0.0.0:80"]
