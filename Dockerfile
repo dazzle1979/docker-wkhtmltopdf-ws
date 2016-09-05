@@ -1,5 +1,5 @@
 FROM openlabs/docker-wkhtmltopdf:latest
-MAINTAINER Sergey Chuprunov
+MAINTAINER Sergey Chuprunov <sergey2lee@gmail.com>
 
 # Install dependencies for running web service
 RUN apt-get update && apt-get install -y \
