@@ -1,5 +1,5 @@
 FROM dazzle1979/docker-wkhtmltopdf:latest
-MAINTAINER Sergey Chuprunov <sergey2lee@gmail.com>
+MAINTAINER Bas van der Graaf <bas@yoobi.nl>
 
 # can take from docker-compose also
 ENV WKHTMLTOPDF_DATA=/tmp/wkhtmltopdf
