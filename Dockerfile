@@ -1,4 +1,4 @@
-FROM openlabs/docker-wkhtmltopdf:latest
+FROM dazzle1979/docker-wkhtmltopdf:latest
 MAINTAINER Sergey Chuprunov <sergey2lee@gmail.com>
 
 # can take from docker-compose also
