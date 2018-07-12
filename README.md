@@ -1,10 +1,14 @@
 # wkhtmltopdf-ws
 
-This is fork of [wkhtmltopdf-aas container](https://hub.docker.com/r/openlabs/docker-wkhtmltopdf-aas).
+This is fork of [schn/docker-wkhtmltopdf-ws](https://github.com/schn/docker-wkhtmltopdf-ws). 
+
 wkhtmltopdf in a docker container as a web service.
 
-This image is based on the 
-[wkhtmltopdf container](https://registry.hub.docker.com/u/openlabs/docker-wkhtmltopdf/).
+Updates:
+
+* Ubuntu 16.04
+* wkhtmltopdf 0.12.5
+* PHP 7
 
 ## Running web service
 
